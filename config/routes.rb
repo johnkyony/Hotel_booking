@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
+
   mount Uploader::Engine => '/uploader'
-=======
+
   get 'booking/new'
 
   get 'booking/create'
 
->>>>>>> 2c6a8e1669d6f1c9fb021187cf588a228fdd9b53
   get 'admin_section/index'
 
   resources :charges , only: [:new , :create]
